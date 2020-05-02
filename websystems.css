@@ -70,7 +70,7 @@ body {
 
 #colours-list {
     list-style-type: none;
-    padding-left: 0px;
+    padding-left: 20px;
     margin-left: 5px;
 }
 
@@ -149,14 +149,14 @@ td {
     color: #393f4d;
     background-color: #393f4d;
     border: 0.1px solid white;
-    margin-right: 3px;
+    margin-right: 5px;
 }
 
 #secondary-background {
     background-color: #1d1e22;
     color: #1d1e22;
     border: 0.1px solid white;
-    margin-right: 3px;
+    margin-right: 5px;
 
 }
 
@@ -164,7 +164,7 @@ td {
     background-color: #d4d4dc;
     color: #d4d4dc;
     border: 0.1px solid white;
-    margin-right: 3px;
+    margin-right: 5px;
 
 }
 
@@ -172,6 +172,6 @@ td {
     background-color: #feda6a;
     color: #feda6a;
     border: 0.1px solid white;
-    margin-right: 3px;
+    margin-right: 5px;
 
 }
