@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sam's Page</title>
+    <link href='websystems.css' rel="stylesheet" type="text/css">
+</head>
+<body>
+        <h1>Web Systems Site</h1>
+   
+
+    <nav id="navbar">
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="past.html">Past</a></li>
+                <li><a href="future.html">Future</a></li>
+                <li><a href="comments.html">Comments</a></li>
+            </ul>
+    </nav>
+    <div class="body-container">
+        <p class="text-body">Yeah, so this is the super serious page where I talk about the technical aspects of this site and what not. For the theme, I was going for a retro laid-back sort of site. The colours, styling and language used represents that.</p>
+        <h2 class="main-heading">Comments </h2>
+        <h3 class="sub-heading">Technical Aspects</h3>
+        
+        <p class="text-body">Below is the directory structure for my site. It consists of a public folder - containing all non .css or .html resources, e.g. images and fonts. After the public folder there is the 4 HTML files, each with their own respective content. Then you have websystems.css which contains the CSS for the entire site, this means all the styling across the site uses the same style sheet. This is great for both developmental purposes (everything is changed at once) and also design purposes (consistency).</p>
+        <div id="directory-image">
+            <img alt="directory structure for my site" src="public/images/directory.png">
+        </div>
+
+        <p class="text-body">
+        Now that the file structure has been layed out. Its time to talk a bit about the page structure itself. Below is a table of all my main CSS classes and ids and styles
+        </p>
+
+        <div id="table-container">
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Purpose</th>
+                </tr>
+                <tr>
+                    <td>h1</td>
+                    <td>element</td>
+                    <td>Styles the title at top of webpage</td>
+                </tr>
+                <tr>
+                    <td>body</td>
+                    <td>element</td>
+                    <td>Styles the background of the site</td>
+                </tr>
+                <tr>
+                    <td>.body-container</td>
+                    <td>class</td>
+                    <td>Styles the grey/yellow box most of my sites content lies in</td>
+                </tr>
+                <tr>
+                    <td>.main-heading </td>
+                    <td>class</td>
+                    <td>Styles the "Comments" piece of text you see on this page. Could be changed to an ID, although kept as class for possible reuse.</td>
+                </tr>
+                <tr>
+                    <td>.sub-heading </td>
+                    <td>class</td>
+                    <td>Styles the sub headings you see around the site, e.g Technical Aspects, Aesthetics.</td>
+                </tr>
+                <tr>
+                    <td>#navbar ul </td>
+                    <td>id + element</td>
+                    <td>First using an ID to specify the element. Then styling the element. This part of the navbar styled is the unordered list containing its li elements.</td>
+                </tr>
+                <tr>
+                    <td>#navbar ul li a</td>
+                    <td>id + element</td>
+                    <td>First using an ID to specify the element. Then styling the element. This part of navbar is each list item e.g Home, Past, Future. This styling also has another version of it with :hover added on which controls what styling occurs when the users mouse hovers over the list item.</td>
+                </tr>
+                
+            </table>
+        </div>
+       
+
+    </div>
+    
+</body>
+</html>

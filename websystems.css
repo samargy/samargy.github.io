@@ -1,0 +1,133 @@
+
+h1 {
+    text-align: center;
+    font-family: "Gameplay", serif;
+    color: #feda6a;
+    font-size: 250%;
+}
+
+
+body {
+    background-color: #1d1e22;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.body-container {
+    color: #d4d4dc;
+    background-color: #393f4d;
+    border: solid 1px #feda6a;
+}
+
+.main-heading {
+    margin-left: 5px;
+}
+.sub-heading {
+    text-decoration: underline;
+    margin-left: 5px;
+}
+
+.text-body {
+    margin-left: 5px;
+}
+.self-info-ul {
+    list-style-type: none;
+    margin-left: 5px;
+    padding-left: 0px;
+}
+.self-info-label {
+    font-weight: bolder;
+    color: #feda6a;
+}
+
+.timeline-heading {
+    color: #feda6a;
+    margin-left: 5px;
+}
+
+
+.in-text-link:visited {
+    color: lightskyblue; 
+}
+
+.image-container {
+    display: flex;
+    width: 35vh;
+    height: 30vh;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.image {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#navbar ul { 
+    font-family: "Gameplay";
+    font-style: italic;
+    font-size: 88%;
+    list-style-type: none; 
+    display: flex; 
+    justify-content: center;
+    align-items: stretch;
+    padding: 20px;
+} 
+ 
+
+#navbar ul li a {
+    text-decoration: none;
+    color:  #d4d4dc; 
+}
+ 
+#navbar ul li a{ 
+    opacity: 1;
+	text-decoration: none; 
+	padding: .2em 1em; 
+	color:  #d4d4dc; 
+    background-color: #393f4d; 
+    border-color:  #d4d4dc;
+    border-width: 2px;
+    border-style: solid;
+	} 
+ 
+#navbar ul li a:hover{ 
+	color: #393f4d; 
+    background-color: #d4d4dc; 
+    border-color: #393f4d;
+} 
+
+
+table {
+    border-collapse: collapse;
+}
+
+th {
+    height: 1vw;
+    width: 30vw;
+}
+table, th, td {
+    border: 1px solid #d4d4dc;
+}
+
+td {
+    padding: 5px;
+}
+
+#table-container {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+@font-face {
+    font-family: "Gameplay";
+    src: url("/public/Gameplay.ttf")
+}
+
+#directory-image {
+    display: flex;
+    justify-content: center;
+    width: 35vh;
+    margin: 0 auto;
+}
