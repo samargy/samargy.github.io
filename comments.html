@@ -24,7 +24,7 @@
         <p class="text-body">Yeah, so this is the super serious page where I talk about the technical, aesthetic, and accessibility aspects of this site and what not. For the theme, I was going for a retro laid-back sort of site. The colours, styling and language used represents that.</p>
         <h3 class="sub-heading">Technical Aspects</h3>
         
-        <p class="text-body">Below is the directory structure for my site. It consists of a public folder - containing all non .css or .html resources, e.g. images and fonts. After the public folder there is the 4 HTML files, each with their own respective content. Then you have websystems.css which contains the CSS for the entire site, this means all the styling across the site uses the same style sheet. This is great for both developmental purposes (everything is changed at once) and also design purposes (consistency).</p>
+        <p class="text-body">Below is the directory structure for my site. Having a good directory structure is good for rapid development, as time spent searching on where resources are, is time spent not developing.  It consists of a public folder - containing all non .css or .html resources, e.g. images and fonts. After the public folder there is the 4 HTML files, each with their own respective content. Then you have websystems.css which contains the CSS for the entire site, this means all the styling across the site uses the same style sheet. This is great for both developmental purposes (everything is changed at once) and also design purposes (consistency).</p>
         <div id="directory-image">
             <img alt="directory structure for my site" src="public/images/directory.png">
         </div>
@@ -73,7 +73,7 @@
                 <tr>
                     <td>#navbar ul li a</td>
                     <td>id + element</td>
-                    <td>First using an ID to specify the element. Then styling the element. This part of navbar is each list item e.g Home, Past, Future. This styling also has another version of it with :hover added on which controls what styling occurs when the users mouse hovers over the list item.</td>
+                    <td>First using an ID to specify the element. Then styling the element. This part of navbar styled is each list item e.g Home, Past, Future. This styling also has another version of it with :hover added on which controls what styling occurs when the users mouse hovers over the list item.</td>
                 </tr>
                 
             </table>
@@ -81,18 +81,27 @@
        
         <p class="text-body">So what was the reasoning behind whether to style an element, a class or an id? Well, quite simply it came down to what the styling was needed for, and if it would be used again. If the styling was a one off for a big feature that would never be used anywhere else in the website, I chose to style the element specifically. If the styling needed to applied in a variety of places - then I made it a class. If it was a one off but could be used again then I made it an ID. (also it was in the specification to use an ID somewhere).</p>
         
-        <h4 class="timeline-heading">Key Tech Decsions I made: </h4>
+        <h4 class="timeline-heading">Key Technical Decsions I made: </h4>
         <p class="text-body">As this is a Web Systems course and not an English course I thought I'd outline some of the other more specific technical choices I made in dot point format, rather than writing out an essay for each one.</p>
         <ul>
-            <li>Choosing to organise my files by using a public folder.</li>
+            <li>Choosing to organise my files by using a public folder. - this is good for a scalable website, having the structure in place already means if your site wants to scale up and add more features then you have the structure ready.</li>
             <li>Making the title style a font not an image - leads to faster load times</li>
-            <li>Stucture my website in a top down column like format. This enables the website when viewed on mobile or skinner screens to condense and resize easier. This is expanded on more in <a class="in-text-link" href="#Accessibility">Accessibility</a></li>
+            <li>Stucture my website in a top-down column like format. This enables the website when viewed on mobile or skinner screens to condense and resize easier. This is expanded on more in <a class="in-text-link" href="#Accessibility">Accessibility</a></li>
             <li>Hosting the webpage using <a target="_blank" href="https://pages.github.com/" class="in-text-link">GitHub Pages</a>, this enabled for rapid implementation and hosting of the site. <a target="_blank" href="https://pages.github.com/" class="in-text-link">GitHub Pages</a> gives you a free hosting plan per account for static content - perfect for this site. </li>
         </ul>
 
 
 
         <h3 id="aesthetics" class="sub-heading">Aesthetics</h3>
+        <p class="text-body">As stated earlier on this page, the main theme I was aiming for was a retro laid-back style. This allows me to make the site minamalistic, whilst also maintaining a sense of character. </p>
+        <p class="text-body">To keep the site from feeling overcrowded as well as avoiding too much contrast (feels bad on the eyes), the colour palette was kept small - to 4 colours to be exact. These colours being:</p>
+
+        <ul id="colours-list">
+            <li><span id="main-background">&#9632;</span>   <b>Main Background</b> - Dark Slate  </li>
+            <li><span id="secondary-background">&#9632;</span>   <b>Secondary Background</b> - Deep Matte Grey</li>
+            <li><span id="main-text">&#9632;</span> <b>Main Text</b> - Silver Fox </li>
+            <li><b>Secondary Text</b> - Are ya yellow?!   <span id="secondary-text">&#9632;</span></li>
+        </ul>
     </div>
     
 </body>

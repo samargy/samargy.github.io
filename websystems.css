@@ -11,12 +11,14 @@ body {
     background-color: #1d1e22;
     background-size: 100%;
     background-repeat: no-repeat;
+
 }
 
 .body-container {
     color: #d4d4dc;
     background-color: #393f4d;
     border: solid 1px #feda6a;
+    margin: 2px;
 }
 
 .main-heading {
@@ -29,6 +31,7 @@ body {
 
 .text-body {
     margin-left: 5px;
+    margin-right: 5px;
 }
 .self-info-ul {
     list-style-type: none;
@@ -63,6 +66,12 @@ body {
 .image {
     max-width: 100%;
     max-height: 100%;
+}
+
+#colours-list {
+    list-style-type: none;
+    padding-left: 0px;
+    margin-left: 5px;
 }
 
 #navbar ul { 
@@ -127,9 +136,29 @@ td {
     src: url("/public/Gameplay.ttf")
 }
 
+
 #directory-image {
     display: flex;
     justify-content: center;
     width: 35vh;
     margin: 0 auto;
+}
+
+
+#main-background {
+    color: #393f4d;
+    background-color: #393f4d;
+    border: 0.1px solid white;
+}
+
+#secondary-background {
+    background-color: #1d1e22;
+    color: #1d1e22;
+    border: 0.1px solid white;
+}
+
+#main-text {
+    background-color: #d4d4dc;
+    color: #d4d4dc;
+    border: 0.1px solid white;
 }
