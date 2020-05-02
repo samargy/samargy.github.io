@@ -45,7 +45,9 @@ body {
     margin-left: 5px;
 }
 
-
+.in-text-link {
+    color: orange; 
+}
 .in-text-link:visited {
     color: lightskyblue; 
 }

@@ -20,8 +20,8 @@
             </ul>
     </nav>
     <div class="body-container">
-        <p class="text-body">Yeah, so this is the super serious page where I talk about the technical aspects of this site and what not. For the theme, I was going for a retro laid-back sort of site. The colours, styling and language used represents that.</p>
         <h2 class="main-heading">Comments </h2>
+        <p class="text-body">Yeah, so this is the super serious page where I talk about the technical, aesthetic, and accessibility aspects of this site and what not. For the theme, I was going for a retro laid-back sort of site. The colours, styling and language used represents that.</p>
         <h3 class="sub-heading">Technical Aspects</h3>
         
         <p class="text-body">Below is the directory structure for my site. It consists of a public folder - containing all non .css or .html resources, e.g. images and fonts. After the public folder there is the 4 HTML files, each with their own respective content. Then you have websystems.css which contains the CSS for the entire site, this means all the styling across the site uses the same style sheet. This is great for both developmental purposes (everything is changed at once) and also design purposes (consistency).</p>
@@ -79,7 +79,20 @@
             </table>
         </div>
        
+        <p class="text-body">So what was the reasoning behind whether to style an element, a class or an id? Well, quite simply it came down to what the styling was needed for, and if it would be used again. If the styling was a one off for a big feature that would never be used anywhere else in the website, I chose to style the element specifically. If the styling needed to applied in a variety of places - then I made it a class. If it was a one off but could be used again then I made it an ID. (also it was in the specification to use an ID somewhere).</p>
+        
+        <h4 class="timeline-heading">Key Tech Decsions I made: </h4>
+        <p class="text-body">As this is a Web Systems course and not an English course I thought I'd outline some of the other more specific technical choices I made in dot point format, rather than writing out an essay for each one.</p>
+        <ul>
+            <li>Choosing to organise my files by using a public folder.</li>
+            <li>Making the title style a font not an image - leads to faster load times</li>
+            <li>Stucture my website in a top down column like format. This enables the website when viewed on mobile or skinner screens to condense and resize easier. This is expanded on more in <a class="in-text-link" href="#Accessibility">Accessibility</a></li>
+            <li>Hosting the webpage using <a target="_blank" href="https://pages.github.com/" class="in-text-link">GitHub Pages</a>, this enabled for rapid implementation and hosting of the site. <a target="_blank" href="https://pages.github.com/" class="in-text-link">GitHub Pages</a> gives you a free hosting plan per account for static content - perfect for this site. </li>
+        </ul>
 
+
+
+        <h3 id="aesthetics" class="sub-heading">Aesthetics</h3>
     </div>
     
 </body>
