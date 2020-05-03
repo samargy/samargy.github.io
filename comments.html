@@ -149,9 +149,30 @@
         </div>
 
         <p class="timeline-heading">Mobile First Development</p>
-        <p class="text-body">This site was designed with the <a class="in-text-link" target="_blank" href="https://anglestudios.co.uk/blog/why-mobile-first-web-design-is-becoming-more-important/">Mobile-First Approach</a>. The mobile first approach is useful in the fact developing screens for mobile is harder. Therefore, if done first it can make the rest of development easier. One of the most crucial
-            aspects of the mobile design is the single image per div of the site. This means you will never find two images side by side, firstly, this is because ease of development - a flexbox can just be used instead of multiple media queries (one for each major screen size). Due to the mobile first approach taken with the site, it actually reads better on mobile than on desktop in my opinion. Thats not saying it reads bad on desktop, just it reads even better on mobile.
+        <p class="text-body">This site was designed with the <a class="in-text-link" target="_blank" href="https://anglestudios.co.uk/blog/why-mobile-first-web-design-is-becoming-more-important/">Mobile-First Approach</a>. The mobile first approach is useful in the fact developing screens for mobile is harder. Therefore, if done first it can make the rest of development easier. One of the more noticeable
+            aspects of the mobile design is the single image per div of the site. This means you will never find two images side by side, one of the reasons is because of ease of development - a flexbox can just be used instead of multiple media queries (one for each major screen size). This also means that as you shrink the page horizontally (try it now) all the images change size slowly (due to their width properties being set using relative 'view height') and still remain centered. Due to the mobile first approach taken with the site, it actually reads better on mobile than on desktop in my opinion. Thats not saying it reads bad on desktop, just it reads even better on mobile. Below is a screenshot of what my site looks like on mobile. Awesome, isn't it?
         </p>
+        <div id="mobile_image">
+            <img src="public/images/mobile.png" alt="screenshot of the website viewd on mobile">
+        </div>
+
+        <p class="timeline-heading">Fonts</p>
+        <p class="text-body">Across the site, all fonts have been kept to the web standard size - this can be specified with a percentage. In doing so all text scales up or down accordingly when the zoom function is used on your browser. Zooming can be performed using <kbd>Ctrl +</kbd>  and  <kbd>Ctrl -</kbd> to zoom in and out respectively. This is great for users with poorer vision that need the text size just that tad bit bigger. On top of this, proper spacing has been put in place so text is not too close to the edges of the screen, as well as spacing between one another. Finally, styling tags have been used such as <code>&lt;b&gt;</code> for bolding text and <code>&lt;em&gt;</code> for italicizing them. This is good because if the stylesheet can't be accessed then some styling can still be applied - this is specifically for screen readers. </p>
+    
+        
+        <p class="timeline-heading">Colour Blindness and Colour Contrast</p>
+        <p class="text-body">As well as aethetic purposes, the colours of the website have been chosen to meet colour contrast standards properly. The use of bright text on a dark background has more contrast than the vice versa. This is because your eyes absorb light, black is the absence of light, so when you are reading black text on a white background you are looking at the absence of light. 
+            Therefore, I chose the aforementioned bright text on dark. Aside from just basic readability purposes, these colour choices actually contribute to whether the site is viewable for colour blind users. There are three main types of colour blindness, absence of red cones, absence of blue cones, and absence of green cones. These are the cones in your eyes that detect a certain type of light. To test for these three different colour blind types, you can turn your site "grayscale", this takes mostly all colour out so you can just see the contrast. For this I used the <a target="_blank" class="in-text-link" href="https://www.toptal.com/designers/colorfilter/">Color Blind Web Page Filter</a> Below is a side by side comparison.  </p>
+    
+        <div id="colourblind_image">
+            <img src="public/images/colour_blind_check.png" alt="side by side comparison normal vs grayscale">
+        </div>
+        
+        <p class="text-body">As you can see the grayscaled site on the right is still quite readable. This means the contrast is high enough that even the most colour blind of people can still be able to use and read the website (albiet not to its maximum potential).</p>
+        <p class="timeline-heading">Usability</p>
+        <p class="text-body">Finally, usability was considered carefully throughout the whole development proccess. One of the main features is when hovering over "clickable" elements the colour changes. This includes all anchor tags, as well as the navbar. In doing so this creates a more intuitive user experience. Also, another feature is that with external links, when clicked open a new page. This is a great usuability feature as the reader can go and check out the other page, and then close it and come back to the page they were just on. This also means that they are still scrolled down to where they were up to reading, as opposed to using the back feature.  </p>
+        <p class="text-body"><a href="#top" class="in-text-link">Back to Top</a></p>
+
     </div>
     
 </body>

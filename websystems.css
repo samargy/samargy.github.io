@@ -13,6 +13,7 @@ body {
     background-color: #1d1e22;
     background-size: 100%;
     background-repeat: no-repeat;
+    font-size: 100%
 
 }
 
@@ -58,9 +59,11 @@ body {
 .in-text-link {
     color: orange; 
 }
-.in-text-link:visited {
-    color: lightskyblue; 
+
+.in-text-link:hover {
+    color: #b36b00;
 }
+
 
 .image-container {
     display: flex;
@@ -165,6 +168,13 @@ td {
     margin: 0 auto;
 }
 
+#colourblind_image {
+    display: flex;
+    justify-content: center;
+    width: 80vw;
+    margin: 0 auto;
+}
+
 #page_wait_time_image {
     display: flex;
     justify-content: center;
@@ -208,4 +218,11 @@ td {
     border: 0.1px solid white;
     margin-right: 5px;
 
+}
+
+#mobile_image {
+    display: flex;
+    justify-content: center;
+    width: 30vh;
+    margin: 0 auto;
 }
