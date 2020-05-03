@@ -1,4 +1,6 @@
-
+html {
+    scroll-behavior: smooth;
+}
 h1 {
     text-align: center;
     font-family: "Gameplay", serif;
@@ -14,6 +16,11 @@ body {
 
 }
 
+#jump-to-list{
+    list-style-type: none;
+    padding-left: 0px;
+    margin-left: 5px;
+}
 .body-container {
     color: #d4d4dc;
     background-color: #393f4d;
@@ -144,6 +151,33 @@ td {
     margin: 0 auto;
 }
 
+#lighthouse_performance_image {
+    display: flex;
+    justify-content: center;
+    width: 45vh;
+    margin: 0 auto;
+}
+
+#uts_performance_image {
+    display: flex;
+    justify-content: center;
+    width: 45vh;
+    margin: 0 auto;
+}
+
+#page_wait_time_image {
+    display: flex;
+    justify-content: center;
+    width: 35vh;
+    margin: 0 auto;
+}
+
+#screen_reader_image {
+    display: flex;
+    justify-content: center;
+    width: 35vh;
+    margin: 0 auto;
+}
 
 #main-background {
     color: #393f4d;

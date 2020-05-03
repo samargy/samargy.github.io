@@ -7,7 +7,7 @@
     <link href='websystems.css' rel="stylesheet" type="text/css">
 </head>
 <body>
-        <h1>Web Systems Site</h1>
+        <h1 id="top">Web Systems Site</h1>
    
 
     <nav id="navbar">
@@ -22,7 +22,14 @@
     <div class="body-container">
         <h2 class="main-heading">Comments </h2>
         <p class="text-body">Yeah, so this is the super serious page where I talk about the technical, aesthetic, and accessibility aspects of this site and what not. For the theme, I was going for a retro laid-back sort of site. The colours, styling and language used represents that.</p>
-        <h3 class="sub-heading">Technical Aspects</h3>
+        <b class="text-body">Jump To:</b>
+        <ul id="jump-to-list">
+            <li><a class="in-text-link" href="#technical">Technical Aspects</a></li>
+            <li><a class="in-text-link" href="#aesthetics">Aesthetics</a></li>
+            <li><a class="in-text-link" href="#accessibility">Accessibility</a></li>
+        </ul>
+        
+        <h3 id="technical" class="sub-heading">Technical Aspects</h3>
         
         <p class="text-body">Below is the directory structure for my site. Having a good directory structure is good for rapid development, as time spent searching on where resources are, is time spent not developing.  It consists of a public folder - containing all non .css or .html resources, e.g. images and fonts. After the public folder there is the 4 HTML files, each with their own respective content. Then you have websystems.css which contains the CSS for the entire site, this means all the styling across the site uses the same style sheet. This is great for both developmental purposes (everything is changed at once) and also design purposes (consistency).</p>
         <div id="directory-image">
@@ -81,7 +88,7 @@
        
         <p class="text-body">So what was the reasoning behind whether to style an element, a class or an id? Well, quite simply it came down to what the styling was needed for, and if it would be used again. If the styling was a one off for a big feature that would never be used anywhere else in the website, I chose to style the element specifically. If the styling needed to applied in a variety of places - then I made it a class. If it was a one off but could be used again then I made it an ID. (also it was in the specification to use an ID somewhere).</p>
         
-        <h4 class="timeline-heading">Key Technical Decsions I made: </h4>
+        <h4 class="timeline-heading">Key Technical Decisions I made: </h4>
         <p class="text-body">As this is a Web Systems course and not an English course I thought I'd outline some of the other more specific technical choices I made in dot point format, rather than writing out an essay for each one.</p>
         <ul>
             <li>Choosing to organise my files by using a public folder. - this is good for a scalable website, having the structure in place already means if your site wants to scale up and add more features then you have the structure ready.</li>
@@ -90,8 +97,20 @@
             <li>Hosting the webpage using <a target="_blank" href="https://pages.github.com/" class="in-text-link">GitHub Pages</a>, this enabled for rapid implementation and hosting of the site. <a target="_blank" href="https://pages.github.com/" class="in-text-link">GitHub Pages</a> gives you a free hosting plan per account for static content - perfect for this site. </li>
         </ul>
 
-
-
+        <p class="text-body">Finally, the advantage of having such a "raw" site is the peformance of it. Nowadays sites are far too bloated with tons of 3rd party add ons, this adds to the load times. So to test my site I used <a target="_blank" class="in-text-link" href="https://developers.google.com/web/tools/lighthouse">Google Lighthouse</a> a site testing tool, this tests Peformance, Accessibility, Search Engine Optimisation and also PWA testing (but we don't need that). Below are the peformance results.</p>
+        <div id="lighthouse_performance_image">
+            <img src="public/images/google_lighthouse_performance.png" alt="My Peformance Results">
+        </div>
+        <p class="text-body">Woah, really good results. Practically perfect. Now for comparrison lets look what the UTS landing page recieves as its score.</p>
+        <div id="uts_performance_image">
+            <img src="public/images/uts_lighthouse.png" alt="UTS Peformance Results">
+        </div>
+        
+        <p class="text-body">Yeah, so quite clearly a worse result. This is because the UTS page is dealing with more images and more things to download, as well as the addition of extra scripts that need to be loaded and such. One big metric to compare is the <b>Time to Interactive</b> metric. You can see the difference in time is a whopping 10.6 seconds. If you look at the graphic below, 1 in 4 users will abandon the page at 4 seconds, then around 1 in 3 users at over 10 seconds. 1 in 3 users is a huge ammount and page load time should be a critical issue in site development.</p>
+        <div id="page_wait_time_image">
+            <img src="public/images/page_load_time.png" alt="User abandonment vs Load Time graph">
+        </div>
+        <p class="text-body"><a href="#top" class="in-text-link">Back to Top</a></p>
         <h3 id="aesthetics" class="sub-heading">Aesthetics</h3>
         <p class="text-body">As stated earlier on this page, the main theme I was aiming for was a retro laid-back style. This allows me to make the site minamalistic, whilst also maintaining a sense of character. </p>
         <p class="text-body">To keep the site from feeling overcrowded as well as avoiding too much contrast (feels bad on the eyes), the colour palette was kept small - to 4 colours to be exact. These colours being:</p>
@@ -107,14 +126,32 @@
             and it looked better than the others but still wasn't to my liking. So I did the thing all web devs do best which is googling stuff - "what colour reads well on grey", the answer I got. Silver. Finally, I had to choose the secondary text colour. I went through a series of trials, red, green, blue, purple, pink, but everything seemed off. I finally arrived at yellow, and thought it fit the retro theme well.</p>
 
 
-        <h4 class="timeline-heading">Key Aesthetic Descions I made: </h4>
+        <h4 class="timeline-heading">Key Aesthetic Decisions I made: </h4>
         <ul>
             <li>Making the navbar elements change colour as they are hovered. - This provides a sense of reactivity for users. </li>
             <li>Choosing to have a content box (the one you are reading in now). Many old blog sites had these so I thought it would fit the retro theme.</li>
             <li>Choosing the font - <a class="in-text-link" target="_blank" href="https://www.dafont.com/gameplay.font">"Gameplay"</a>  for the title. This gave it a sort of arcade vibe, aligning with the retro theme.</li>
             <li>Styling the table with the <b>border-collapse</b> property so you get single lines instead of double lines. This aligns with the minamalistic approach.</li>
             <li>Coming up with the "timeline" feature on the Past page. This delivered the content in a streamlined, simple and easy to read manner.</li>
+            <li>Making use of the <b>scroll-behaviour</b> CSS property. Setting this to smooth makes in page nav links jump to the section specified in a smooth manner. <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior" class="in-text-link" target="_blank" >Example here</a>.</li>
+            <li>Using the headings, sub headings and sub-sub-headings format. This allows for the infomation to be easily absorbed and not confusing on where to find the info.</li>
+            <li>For all text apart form the header and navbar, <b>Times New Roman</b> has been chosen. This is to invoke the feeling of a "raw" site, most earlier low traffic sites on the web had no font specified, and the default font for HTML was Times New Roman. Hence why I'm using it on this site now.</li>
         </ul>
+        <p class="text-body"><a href="#top" class="in-text-link">Back to Top</a></p>
+        
+        <h3 id="accessibility" class="sub-heading">Accessibility</h3>
+        <p class="text-body">When it comes to accessibility its best to let other people think of the checklist that needs to be covered as you might miss or forget something on your own. To do this I used the <a class="in-text-link" href="https://www.w3.org/WAI/fundamentals/accessibility-principles/" target="_blank">W3C Accessibility Principles</a>.</p>
+        <p class="timeline-heading">Screen Readers and Internal Structure</p>
+        <p class="text-body">Due to screen readers not being able to read and view media, alt text is needed for non-text content. Therefore all images have a specified alt text. This also functions as a way for audio readers to read out the whole webpage, these images can be read aloud via their alternate text. Aside from just alt text, proper HTML structure has been enforced. This includes the use of standard HTML tags such as  <code>&lt;h1&gt;</code> and <code>&lt;p&gt;</code>  both of which have their own default formatting. Also, table heads <code>&lt;th&gt;</code> have also been used so that the tables maintain structure as well. This means when a stylesheet cannot be used, the page still maintains a "readable" format. Below is an example of this.</p>
+
+        <div id="screen_reader_image">
+            <img src="public/images/no_stylesheet.png" alt="no stylesheet with website image">
+        </div>
+
+        <p class="timeline-heading">Mobile First Development</p>
+        <p class="text-body">This site was designed with the <a class="in-text-link" target="_blank" href="https://anglestudios.co.uk/blog/why-mobile-first-web-design-is-becoming-more-important/">Mobile-First Approach</a>. The mobile first approach is useful in the fact developing screens for mobile is harder. Therefore, if done first it can make the rest of development easier. One of the most crucial
+            aspects of the mobile design is the single image per div of the site. This means you will never find two images side by side, firstly, this is because ease of development - a flexbox can just be used instead of multiple media queries (one for each major screen size). Due to the mobile first approach taken with the site, it actually reads better on mobile than on desktop in my opinion. Thats not saying it reads bad on desktop, just it reads even better on mobile.
+        </p>
     </div>
     
 </body>
